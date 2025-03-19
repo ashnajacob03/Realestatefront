@@ -1,8 +1,7 @@
 function App() {
   return (
-    
     <>
-    {/* Heiiiiii */}
+    {/* Hello World */}
         </>
   )
 }

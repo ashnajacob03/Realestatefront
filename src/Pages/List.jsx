@@ -9,7 +9,7 @@ const List = () => {
   // Define the function BEFORE using it in useEffect
   const fetchProperties = async () => {
     try {
-      const response = await axios.get("http://localhost:3002/itemInserting");
+      const response = await axios.get("https://backend-5tvh.onrender.com/itemInserting");
       console.log("Fetched properties:", response.data); // Debugging
       setProperties(response.data);
     } catch (error) {

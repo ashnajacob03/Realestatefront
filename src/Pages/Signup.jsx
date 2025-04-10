@@ -22,7 +22,7 @@ function Signup() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:3002/userinsert", property);
+      await axios.post("https://backend-5tvh.onrender.com/userinsert", property);
 Swal.fire({
         icon: "success",
         title: "Success!",

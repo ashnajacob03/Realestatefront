@@ -16,7 +16,7 @@ function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:3002/login", property);
+      const response = await axios.post("https://backend-5tvh.onrender.com/login", property);
       
       if (response.status === 200) {
         Swal.fire({

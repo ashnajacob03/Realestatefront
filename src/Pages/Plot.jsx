@@ -21,7 +21,7 @@ function Plot() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:3002/itemInserting", property);
+      await axios.post("https://backend-5tvh.onrender.com/itemInserting", property);
       
       Swal.fire({
         icon: "success",

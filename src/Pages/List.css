@@ -1,0 +1,121 @@
+/* Listings Section */
+.listings {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #121212; /* Deep Black */
+    color: white;
+}
+
+.listings h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ff6600; /* Vibrant Orange */
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+/* Listing Container */
+.listing-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Individual Listing Card */
+.listing-card {
+    background: #1e1e1e; /* Dark Card */
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(255, 102, 0, 0.3);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.listing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(255, 102, 0, 0.5);
+}
+
+/* Listing Image */
+.listing-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* Listing Details */
+.listing-details {
+    padding: 20px;
+    text-align: left;
+}
+
+.listing-details h3 {
+    margin-bottom: 10px;
+    color: #ff6600; /* Orange */
+    font-size: 1.8rem;
+}
+
+.listing-details p {
+    font-size: 1.1rem;
+    color: #ddd;
+    margin-bottom: 10px;
+}
+
+/* Price */
+.price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #ffd166; /* Light Orange */
+}
+
+/* View Details Button */
+.view-details {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #d35400;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+.view-details:hover {
+    background-color: #ff6600;
+    color: #121212;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .listing-container {
+        grid-template-columns: 1fr;
+    }
+}
+.delete {
+    background: #dc3545;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit {
+    background: #ffc107;
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete:hover, .edit:hover {
+    opacity: 0.8;
+}

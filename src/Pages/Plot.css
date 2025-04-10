@@ -1,0 +1,102 @@
+/* Plot Form Section */
+.plot-form {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 40px;
+    background: #222; /* Dark Card Background */
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(255, 102, 0, 0.3); /* Orange Glow */
+    text-align: center;
+}
+
+/* Heading */
+.plot-form h2 {
+    font-size: 2rem;
+    color: #d35400; /* Dark Orange */
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+.plot-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Labels */
+.plot-form label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffd166; /* Light Orange */
+    text-align: left;
+}
+
+/* Input Fields */
+.plot-form input,
+.plot-form textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #d35400;
+    background-color: #333;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.plot-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+/* Input Focus Effect */
+.plot-form input:focus,
+.plot-form textarea:focus {
+    border-color: #ff6600;
+}
+
+/* Submit Button */
+.plot-form button {
+    padding: 12px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #d35400;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+}
+
+.plot-form button:hover {
+    background-color: #ff6600;
+    color: #121212;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .plot-form {
+        width: 90%;
+        padding: 30px;
+    }
+}
+/* Login Link */
+.login-link {
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #ffd166;
+}
+
+.login-link a {
+    color: #ff6600;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.login-link a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
